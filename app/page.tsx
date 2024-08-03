@@ -9,6 +9,8 @@ export default function Page () {
         Hello, Nextjs!
       </h1>
       <Link href={'/dashboard'}>dashboard</Link>
+      <br />
+      <Link href={'/feed'}>feed</Link>
     </div>
   )
 }

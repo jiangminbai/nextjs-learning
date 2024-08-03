@@ -1,5 +1,9 @@
 # nextjs-learning
 
+### next预渲染
+1. SSG(static site generation)静态网站生成
+2. SSR(Server site Rendering) 服务端渲染
+
 ### Pages and Layouts
 
 - page: 与路由一一对应的UI
@@ -23,3 +27,6 @@
 - conditional route
 - tab groups
 - modals
+### intercepting Routes
+(..)
+### Data Fetching

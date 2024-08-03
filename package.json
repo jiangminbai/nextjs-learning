@@ -12,6 +12,7 @@
   "author": "江小白",
   "license": "MIT",
   "dependencies": {
+    "antd": "^5.19.4",
     "next": "^14.2.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
