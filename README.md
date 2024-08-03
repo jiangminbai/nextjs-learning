@@ -30,3 +30,6 @@
 ### intercepting Routes
 (..)
 ### Data Fetching
+
+### rendering
+

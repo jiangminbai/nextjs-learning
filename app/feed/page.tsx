@@ -1,10 +1,12 @@
 import Link from "next/link"
 
-export default function Page () {
+export default async function Page () {
+  const data = await getData()
+  console.log(data)
   return (
     <div>
       {
-        list.map(item => {
+        data.map(item => {
           return <div><Link href={'/photo/' + item.id}>{item.txt}</Link></div>
         })
       }
@@ -12,13 +14,11 @@ export default function Page () {
   )
 }
 
-const list = [
-  {
-    id: 1,
-    txt: 'hello'
-  },
-  {
-    id: 2,
-    txt: 'world'
+async function getData () {
+  const res = await fetch('http://localhost:3000/data.json')
+  if (!res.ok) {
+    throw new Error('Failed to fetch data')
   }
-]
+
+  return res.json()
+}
